@@ -41,4 +41,16 @@ public void tampilPemainInti() {
 		System.out.println(p.getNoPunggung()+" # "+p.getNama());
 	}
 }
+	// menambahkan fungsi tambah pemain Inti
+	public boolean tambahPemainInti(Pemain pemain) {
+		if (pemainInti.size() < 11) {
+			pemainInti.add(pemain);
+			System.out.println(pemain.getNama() + " berhasil ditambahkan sebagai pemain inti");
+			return true;
+		} else {
+			System.out.println(pemain.getNama() + " tidak berhasil ditambahkan sebgai pemain inti.");
+			return false;
+		}
+		
+	}
 }
